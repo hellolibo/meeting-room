@@ -1,0 +1,22 @@
+{
+  "name": "meeting-room",
+  "version": "1.0.0",
+  "description": "order meeting room tool",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hellolibo/meeting-room.git"
+  },
+  "author": "hellolibo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hellolibo/meeting-room/issues"
+  },
+  "homepage": "https://github.com/hellolibo/meeting-room#readme",
+  "devDependencies": {
+    "express": "^4.13.3"
+  }
+}
