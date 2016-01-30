@@ -16,7 +16,10 @@
     "url": "https://github.com/hellolibo/meeting-room/issues"
   },
   "homepage": "https://github.com/hellolibo/meeting-room#readme",
-  "devDependencies": {
-    "express": "^4.13.3"
+  "dependencies": {
+    "express": "^4.13.3",
+    "mysql": "^2.10.2",
+    "xtemplate": "^4.5.0",
+    "xtpl": "^3.2.0"
   }
 }
