@@ -19,6 +19,7 @@
   "dependencies": {
     "express": "^4.13.3",
     "mysql": "^2.10.2",
+    "q": "^1.4.1",
     "xtemplate": "^4.5.0",
     "xtpl": "^3.2.0"
   }
