@@ -3,16 +3,31 @@ var router = express.Router()
 
 var db = require('../libs/db')
 
-router.get('/room', function (req, res) {
+router.get('/rooms', function (req, res) {
 
-    var roomDb = db.getRoom()
+    var roomsDb = db.getRooms()
 
-    console.log(roomDb)
-
-    roomDb.done(function (data) {
-        res.send(data)
+    roomsDb.done(function (data) {
+        var formatData = data.map(function (item, index) {
+            item.title = item.name
+            item.eventColor =item.color
+            return item
+        })
+        res.send(formatData)
     })
 
+})
+
+router.get('/events', function(req, res){
+    
+    var start = req.query.start
+    var end = req.query.end
+
+    var eventsDb = db.getEvents(start, end)
+
+    eventsDb.done(function(data){
+        res.send(data)
+    })
 })
 
 
